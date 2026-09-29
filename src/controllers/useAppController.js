@@ -1,0 +1,1 @@
+import{useEffect,useState}from'react';export default function useAppController(){const[theme,setTheme]=useState(()=>localStorage.getItem('fc-theme')||'light');useEffect(()=>{localStorage.setItem('fc-theme',theme);document.documentElement.dataset.theme=theme},[theme]);return{theme,toggleTheme:()=>setTheme(v=>v==='light'?'dark':'light')}}

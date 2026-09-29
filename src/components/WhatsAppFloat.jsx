@@ -1,0 +1,1 @@
+import React from'react';import{restaurant}from'../models/RestaurantModel';export default function WhatsAppFloat(){return <a className="whatsapp-float" href={`https://wa.me/${restaurant.whatsapp}`} target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp"><span>◉</span><b>Chat with us</b></a>}

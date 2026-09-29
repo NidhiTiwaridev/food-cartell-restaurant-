@@ -1,0 +1,1 @@
+export const restaurant={name:'Food Cartell',tagline:'Good food, good mood.',address:'12 Food Street, Indore',phone:'+91 99999 99999',email:'hello@foodcartell.com',whatsapp:'919999999999',hours:'12:00 PM – 11:00 PM'};

@@ -1,0 +1,2 @@
+import {useMemo,useState} from 'react';import{addItemToCart,getCartCount,getCartTotal,updateCartQuantity}from'../models/CartModel';
+export default function useCartController(){const[items,setItems]=useState([]);const[isOpen,setIsOpen]=useState(false);const addItem=(dish,qty=1)=>{setItems(v=>addItemToCart(v,dish,qty));setIsOpen(true)};const updateQuantity=(id,delta)=>setItems(v=>updateCartQuantity(v,id,delta));return{items,isOpen,setIsOpen,addItem,updateQuantity,count:useMemo(()=>getCartCount(items),[items]),total:useMemo(()=>getCartTotal(items),[items])}}
